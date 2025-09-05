@@ -16,7 +16,7 @@
     "build:client": "vite build",
     "build:server": "vite build --config vite.config.server.ts",
     "start": "node dist/server/node-build.mjs",
-    "vercel-build": "npm run build:client",
+    "vercel-build": "vite build --config vite.config.prod.ts",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
